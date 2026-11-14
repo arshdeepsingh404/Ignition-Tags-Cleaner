@@ -204,12 +204,14 @@ How matching works:
 
 ## Download & Run Instructions
 
-Ignition Tag Cleaner is distributed as a **Windows executable (`.exe`)**:
+Ignition Tag Cleaner is distributed as a **portable `.zip`** containing the app, its libraries and the `config.xlsx` rule workbook:
 
 1. Navigate to the [Releases](https://github.com/arshdeepsingh404/Ignition-Tags-Cleaner/releases) tab on the right side of this GitHub repository.
-2. Download the latest **`Ignition Tags Cleaner.exe`** and the **`config.xlsx`** rule workbook.
-3. Keep both files in the same folder. The app reads its rules from the `config.xlsx` next to it.
-4. Double-click **`Ignition Tags Cleaner.exe`** to launch. It runs on 64-bit Windows 10/11.
+2. Download the latest **`.zip`** file.
+3. Extract it to a folder of your choice. Keep the files together; the app reads its rules from the `config.xlsx` next to it.
+4. Double-click **`Ignition Tags Cleaner.exe`** to launch.
+
+**No installation required**: it runs from the extracted folder on Windows 10/11. The app needs the [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0); if it is missing, Windows prompts you to download it the first time you launch.
 
 Then use it:
 
