@@ -249,6 +249,10 @@ Please do not include real plant tag exports or site names in issues, samples or
 
 Parts of this app were developed and tested with the help of AI coding tools, [Google Antigravity](https://antigravity.google/) and [Claude Code](https://claude.com/claude-code).
 
+&nbsp;
+<p align="center">◈ ◈ ◈</p>
+&nbsp;
+
 ## License
 
 Released under the [MIT License](LICENSE).
