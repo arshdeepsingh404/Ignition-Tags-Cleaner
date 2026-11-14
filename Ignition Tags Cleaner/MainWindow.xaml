@@ -143,8 +143,8 @@
                         <Grid Grid.Row="0" Margin="0,0,0,32">
                             <TextBlock Text="FILE ANALYSIS" FontSize="12" FontWeight="Bold" Foreground="#0066CC" VerticalAlignment="Center" Opacity="0.8"/>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                                <Button x:Name="PreviewAllButton" Content="Preview All Tags" Style="{StaticResource SecondaryButton}" Padding="12,6" FontSize="11" Click="PreviewAll_Click" Margin="0,0,6,0" Width="140" IsEnabled="False"/>
-                                <Button x:Name="PreviewOptimizedButton" Content="Preview Optimized Tags" Style="{StaticResource SecondaryButton}" Padding="12,6" FontSize="11" Click="PreviewOptimized_Click" Width="140" IsEnabled="False"/>
+                                <Button x:Name="PreviewAllButton" Content="Preview All Tags" Style="{StaticResource SecondaryButton}" Padding="12,6" FontSize="11" Click="PreviewAll_Click" Margin="0,0,6,0" Width="160" IsEnabled="False"/>
+                                <Button x:Name="PreviewOptimizedButton" Content="Preview Optimized Tags" Style="{StaticResource SecondaryButton}" Padding="12,6" FontSize="11" Click="PreviewOptimized_Click" Width="160" IsEnabled="False"/>
                             </StackPanel>
                         </Grid>
                         
