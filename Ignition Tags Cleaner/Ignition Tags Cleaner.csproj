@@ -14,10 +14,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Embedded only: a loose copy would make WPF look for the file on disk instead of in the .exe. -->
     <Resource Include="Resources\app_icon.ico" />
-    <Content Include="Resources\app_icon.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -25,8 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!-- Stays a loose file next to the .exe, even in a single-file publish, so users can edit the rules. -->
     <None Update="config.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
     </None>
   </ItemGroup>
 

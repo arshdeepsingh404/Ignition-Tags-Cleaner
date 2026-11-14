@@ -204,14 +204,14 @@ How matching works:
 
 ## Download & Run Instructions
 
-Ignition Tag Cleaner is distributed as a **portable `.zip`** containing the app, its libraries and the `config.xlsx` rule workbook:
+Ignition Tag Cleaner is distributed as a **portable `.zip`** containing a single `Ignition Tags Cleaner.exe` and the `config.xlsx` rule workbook:
 
 1. Navigate to the [Releases](https://github.com/arshdeepsingh404/Ignition-Tags-Cleaner/releases) tab on the right side of this GitHub repository.
 2. Download the latest **`.zip`** file.
-3. Extract it to a folder of your choice. Keep the files together; the app reads its rules from the `config.xlsx` next to it.
+3. Extract it to a folder of your choice. Keep the two files together; the app reads its rules from the `config.xlsx` next to it.
 4. Double-click **`Ignition Tags Cleaner.exe`** to launch.
 
-**No installation required**: it runs from the extracted folder on Windows 10/11. The app needs the [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0); if it is missing, Windows prompts you to download it the first time you launch.
+**No installation required**: it runs standalone from the extracted folder on 64-bit Windows 10/11. The .NET runtime is built into the `.exe`, so nothing else needs to be installed.
 
 Then use it:
 
@@ -232,6 +232,14 @@ Developers can build the app with the [.NET 10 SDK](https://dotnet.microsoft.com
 dotnet build "Ignition Tags Cleaner.slnx"
 dotnet run --project "Ignition Tags Cleaner/Ignition Tags Cleaner.csproj"
 ```
+
+To produce the release build, a single self-contained `.exe` with `config.xlsx` beside it:
+
+```powershell
+dotnet publish "Ignition Tags Cleaner/Ignition Tags Cleaner.csproj" -p:PublishProfile=win-x64
+```
+
+The output is in `Ignition Tags Cleaner/bin/Release/net10.0-windows/win-x64/publish/`.
 
 &nbsp;
 <p align="center">◈ ◈ ◈</p>
