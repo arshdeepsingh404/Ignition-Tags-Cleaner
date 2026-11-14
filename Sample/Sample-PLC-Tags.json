@@ -1,0 +1,178 @@
+{
+  "name": "Sample_PLC",
+  "tagType": "Folder",
+  "tags": [
+    {
+      "name": "_Diagnostics_",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Scan_Time",
+          "tagType": "AtomicTag",
+          "dataType": "Int4",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Scan_Time"
+        },
+        {
+          "name": "Connected",
+          "tagType": "AtomicTag",
+          "dataType": "Boolean",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Connected"
+        }
+      ]
+    },
+    {
+      "name": "Configuration",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Line_Speed",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Line_Speed"
+        },
+        {
+          "name": "Recipe_Name",
+          "tagType": "AtomicTag",
+          "dataType": "String",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Recipe_Name"
+        }
+      ]
+    },
+    {
+      "name": "Conveyor_1",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Running",
+          "tagType": "AtomicTag",
+          "dataType": "Boolean",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Running"
+        },
+        {
+          "name": "Faulted",
+          "tagType": "AtomicTag",
+          "dataType": "Boolean",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Faulted"
+        },
+        {
+          "name": "Speed",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Speed"
+        },
+        {
+          "name": "Internal_Timer",
+          "tagType": "AtomicTag",
+          "dataType": "Int4",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Internal_Timer"
+        },
+        {
+          "name": "Scan_Counter",
+          "tagType": "AtomicTag",
+          "dataType": "Int4",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Scan_Counter"
+        },
+        {
+          "name": "Debug",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "Step_1",
+              "tagType": "AtomicTag",
+              "dataType": "Boolean",
+              "valueSource": "opc",
+              "opcServer": "Ignition OPC UA Server",
+              "opcItemPath": "ns=1;s=[Sample_PLC]Step_1"
+            },
+            {
+              "name": "Step_2",
+              "tagType": "AtomicTag",
+              "dataType": "Boolean",
+              "valueSource": "opc",
+              "opcServer": "Ignition OPC UA Server",
+              "opcItemPath": "ns=1;s=[Sample_PLC]Step_2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pump_1",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Running",
+          "tagType": "AtomicTag",
+          "dataType": "Boolean",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Running"
+        },
+        {
+          "name": "Faulted",
+          "tagType": "AtomicTag",
+          "dataType": "Boolean",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Faulted"
+        },
+        {
+          "name": "Start_Cmd",
+          "tagType": "AtomicTag",
+          "dataType": "Boolean",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Start_Cmd"
+        },
+        {
+          "name": "Internal_Timer",
+          "tagType": "AtomicTag",
+          "dataType": "Int4",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Internal_Timer"
+        }
+      ]
+    },
+    {
+      "name": "Scratch",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Temp_1",
+          "tagType": "AtomicTag",
+          "dataType": "Int4",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Temp_1"
+        },
+        {
+          "name": "Temp_2",
+          "tagType": "AtomicTag",
+          "dataType": "Int4",
+          "valueSource": "opc",
+          "opcServer": "Ignition OPC UA Server",
+          "opcItemPath": "ns=1;s=[Sample_PLC]Temp_2"
+        }
+      ]
+    }
+  ]
+}

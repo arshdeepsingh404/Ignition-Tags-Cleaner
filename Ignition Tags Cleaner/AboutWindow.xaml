@@ -1,0 +1,65 @@
+<Window x:Class="TagCleaner.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="About Ignition Tag Cleaner" Height="300" Width="460"
+        WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        Background="#FBFCFD"
+        FontFamily="Segoe UI, Tahoma, sans-serif">
+
+    <Window.Resources>
+        <!-- Secondary Button Style -->
+        <Style x:Key="SecondaryButton" TargetType="Button">
+            <Setter Property="Background" Value="#F6F8FA"/>
+            <Setter Property="Foreground" Value="#24292E"/>
+            <Setter Property="Padding" Value="20,7"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="4" BorderBrush="#D1D5DA" BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="{TemplateBinding Padding}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#EFF2F5"/>
+                                <Setter Property="BorderBrush" Value="#C6CBD1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="28,24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- App Icon & Title -->
+            <RowDefinition Height="*"/>    <!-- Description -->
+            <RowDefinition Height="Auto"/> <!-- Centered Close Button -->
+        </Grid.RowDefinitions>
+
+        <!-- Header with App Icon -->
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,0,0,16">
+            <Image x:Name="AboutAppIcon" Width="52" Height="52" HorizontalAlignment="Center" Margin="0,0,0,10" RenderOptions.BitmapScalingMode="HighQuality"/>
+            <TextBlock Text="Ignition Tag Cleaner" FontSize="20" FontWeight="SemiBold" Foreground="#1B1F23" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="AboutVersionText" Text="Version 1.0.0" FontSize="12" Foreground="#6A737D" HorizontalAlignment="Center" Margin="0,3,0,0"/>
+        </StackPanel>
+
+        <!-- Description -->
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="A utility for filtering PLC tag exports for Ignition using custom Excel rules." 
+                       FontSize="13" Foreground="#586069" TextAlignment="Center" TextWrapping="Wrap" LineHeight="20" Margin="8,0"/>
+        </StackPanel>
+
+        <!-- Centered Close Button -->
+        <StackPanel Grid.Row="2" Margin="0,20,0,0" HorizontalAlignment="Center">
+            <Button Content="Close" Style="{StaticResource SecondaryButton}" Click="Close_Click" Width="140"/>
+        </StackPanel>
+    </Grid>
+</Window>

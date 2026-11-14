@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Sample/">
+    <File Path="Sample/Sample-PLC-Tags.json" />
+  </Folder>
+  <Project Path="Ignition Tags Cleaner/Ignition Tags Cleaner.csproj" />
+</Solution>
